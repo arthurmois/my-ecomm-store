@@ -71,15 +71,23 @@
 
 .grid {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  list-style: none;
+  max-width: 60em;
   margin-top: 3rem;
+}
+
+@media (min-width: 960px) {
+  .card {
+    flex-basis: calc(33.33% - 2rem);
+  }
 }
 
 .card {
   margin: 1rem;
+  flex-basis: calc(50% - 2rem);
   padding: 1.5rem;
   text-align: left;
   color: inherit;
