@@ -25,9 +25,9 @@ export default function Home() {
           {products.map(product => {
             const { id, title, price, description, image } = product;
             return(
-              <li key={id} className={styles.card}>
+              <li key={id} className={styles.card} >
                 <a href="#">
-                <Image src={image} alt={title} />
+                <Image width='300' height='200' src={image} alt={title} />
                   <h3>{title}</h3>
                   <p>{price}</p>
                   <p>{description}</p>
