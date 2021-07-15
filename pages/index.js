@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Arthur's Photos
+          Arthurs Photos
         </h1>
 
         <p className={styles.description}>
